@@ -1,0 +1,164 @@
+
+	GIT != GITHUB
+
+GIT:
+
+	- A Distributed Version Control System.
+	- To check or track changes in files and folders.
+	- To collaborate in teams. 
+	- Helps in merging the code.
+	
+GITHUB:
+
+	- A website to upload your local repositories to server repositories.
+	- Provides Backup
+	- provides Visual Interface to your repositories.
+	- Makes collaboration easier.
+	
+Version Control System:
+
+	1. Centralized VCS
+	2. Distributed VCS
+	
+------------------------------------------------------------
+
+git config --global user.email gunwani.madhu@gmail.com
+git config --global user.name mgunwani
+
+1. Initialize Local Git Repository: (Only Once)
+
+	git init
+	
+2. To check status of tracked/untracked files and folders:
+
+	git status
+	
+3. To track files and folders for staging:
+
+	git add .
+	
+4. To check status for files and folders which are ready to commit:
+
+	git status
+	
+5. To commit tracked files and folders:
+
+	git commit -m "First Commit"
+
+6. Add Origin to push your recent commit to server repository: (Only Once)
+
+	git remote add origin https://github.com/mgunwani/Dell-DotNet-Phase-Projects.git
+	
+7. Push Commits to Remote Origin:
+
+	git push -u origin master
+	
+------------------------------------------------------
+
+Branching and Merging:
+
+1. What are branches?
+2. How to create new Branch?
+3. How to checkout to branch?
+4. How to merge branch to master?
+5. How to delete branch(locally and remotely)?
+
+------------------------------------------------------
+
+1. To see the list of branches:
+
+	git branch
+	
+2. Create New Branch:
+
+	git branch MyFirstBranch
+	
+3. Checkout to MyFirstBranch:
+
+	git checkout MyFirstBranch
+	
+4. Add Some Content Local Repository and Push Changes to MyFirstBranch:
+
+	git status
+	
+	git add .
+	
+	git status
+	
+	git commit -m "First Commit to MyFirstBranch"
+	
+	git push -u origin MyFirstBranch
+	
+5. Verify the Branch on Server Repository
+	
+------------------------------------------------------
+
+Merging MyFirstBranch to master Brach:
+
+1. Checkout to master branch or destination branch:
+
+	git checkout master
+	
+2. Verify the current checkedout branch i.e. master branch:
+
+	git branch
+	
+3. Merge MyFirstBranch to master branch:
+
+	git merge MyFirstBranch
+	
+4. Push Changes to master branch:
+
+	git push -u origin master
+	
+5. Verify to get below message on MyFirstBranch:
+
+	This branch is even with master.
+
+---------------------------------------------------
+
+1. To get the list of branches at local:
+
+	git branch
+	
+2. To get the list of branches at remote:
+
+	git branch -r
+	
+3. To get the list of branches at local and remote:
+
+	git branch -a
+	
+---------------------------------------------------
+	
+1. To delete branch from Local Repository:
+
+	git branch -d MyFirstBranch
+
+2. To delete branch from Remote Repository:
+
+	git push origin --delete MyFirstBranch
+
+----------------------------------------------------
+
+1. Clonning Repository from Server to Local:
+
+	git clone https://github.com/mgunwani/Dell-DotNet-Phase-Projects.git
+	
+2. Pulling Changes to Clonned Project:
+
+	Go To Clonned Project Folder:
+	
+	git pull
+
+----------------------------------------------------
+
+	git fetch
+	
+	git diff origin/master
+	
+	git merge
+	
+	
+	
+	
